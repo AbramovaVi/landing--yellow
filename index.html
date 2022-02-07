@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Дориан авто</title>
+	<link rel="stylesheet" href="css/fonts/muller/stylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<header>
+		<div class="header-wrapper">
+			<div class="burger-icon" id="burger-icon">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+			<div class="logo">
+				<img src="img/logo1.svg" alt="">
+			</div>
+
+		<nav class="navbar">
+			<div class="cities">
+				<img src="img/location-icon.png" alt="">
+				<p>Москва</p>
+			</div>
+			<ul>
+				<li>
+					<a href="">ПТС</a>
+					<div class="dropdown-content">
+					    <a href="#">text 1</a>
+					    <a href="#">text 2</a>
+					    <a href="#">text 3</a>
+					</div>
+				</li>
+				<li>
+					<a href="">Ломбарды</a>
+					<div class="dropdown-content">
+					    <a href="#">text 1</a>
+					    <a href="#">text 2</a>
+					    <a href="#">text 3</a>
+					</div>
+				</li>
+				<li><a href="#">По форме</a></li>
+				<li><a href="#">Калькулятор</a></li>
+				<li><a href="#">Безопасность</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<p class="number">8 (800) 555-15-83</p>
+			<div class="button button__yellow modal-button">заказать звонок</div>
+		</nav>
+		<img src="img/mobile-icon.png" alt="" class="mobile-icon">
+	</header>
+
+	<div id="city-modal" class="city-modal">
+			  <div class="modal-content">
+			    <span class="close">&#10005;</span>
+			    <h2>Выберите город</h2>
+			    <div class="city-list">
+			    	<p class="letter">А</p>
+			    	<a href="">Архангельск</a>
+			    	<a href="">Астрахань</a>
+
+			    	<p class="letter">Б</p>
+			    	<a href="">Барнаул</a>
+			    	<a href="">Белгород</a>
+			    	<a href="">Брянск</a>
+
+			    	<p class="letter">В</p>
+			    	<a href="">Владикавказ</a>
+			    	<a href="">Владимир</a>
+			    	<a href="">Волгоград</a>
+
+			    	<p class="letter">Е</p>
+			    	<a href="">Екатеринбург</a>
+
+			    	<p class="letter">И</p>
+			    	<a href="">Ижевск</a>
+			    	<a href="">Иркутск</a>
+
+			    	<p class="letter">К</p>
+			    	<a href="">Казань</a>
+			    	<a href="">Калуга</a>
+			    	<a href="">Кемерово</a>
+			    	<a href="">Киров</a>
+			    	<a href="">Кострома</a>
+			    	<a href="">Краснодар</a>
+			    	<a href="">Красноярск</a>
+			    	<a href="">Курск</a>
+
+			    	<p class="letter">М</p>
+			    	<a href="">Магнитогорск</a>
+			    	<a href="">Москва</a>
+			    	<a href="">Мурманск</a>
+
+			    	<p class="letter">Н</p>
+			    	<a href="">Нижний Новгород</a>
+			    	<a href="">Нижний Тагил</a>
+			    	<a href="">Новокузнецк</a>
+			    	<a href="">Новосибирск</a>
+
+			    	<p class="letter">О</p>
+			    	<a href="">Омск</a>
+			    	<a href="">Орел</a>
+			    	<a href="">Оренбург</a>
+
+			    	<p class="letter">П</p>
+			    	<a href="">Пенза</a>
+			    	<a href="">Пермь</a>
+			    	<a href="">Петрозаводск</a>
+
+			    	<p class="letter">Р</p>
+			    	<a href="">Ростов-на-Дону</a>
+			    	<a href="">Рязань</a>
+
+			    	<p class="letter">С</p>
+			    	<a href="">Самара</a>
+			    	<a href="">Санкт-Петербург</a>
+			    	<a href="">Саранск</a>
+			    	<a href="">Саратов</a>
+			    	<a href="">Сочи</a>
+			    	<a href="">Ставрополь</a>
+
+			    	<p class="letter">Т</p>
+			    	<a href="">Тамбов</a>
+			    	<a href="">Тверь</a>
+			    	<a href="">Тольятти</a>
+			    	<a href="">Томск</a>
+			    	<a href="">Тула</a>
+			    	<a href="">Тюмень</a>
+
+			    	<p class="letter">У</p>
+			    	<a href="">Улан-Удэ</a>
+			    	<a href="">Ульяновск</a>
+			    	<a href="">Уфа</a>
+
+			    	<p class="letter">Х</p>
+			    	<a href="">Хабаровск</a>
+
+			    	<p class="letter">Ч</p>
+			    	<a href="">Чебоксары</a>
+			    	<a href="">Челябинск</a>
+
+			    	<p class="letter">Я</p>
+			    	<a href="">Ярославль</a>
+			  	</div>
+			  	<p><a href="">Показать все города</a></p>
+			  </div>
+	</div>
+
+	<section class="main">
+		<div class="main-content">
+			<h1>Автоломбард в городе <span>Москва</span></h1>
+			<ul>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">За 30 минут </br>без визита в офис</li>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">После оформления</br>ваше авто остается</li>
+			</ul>
+			<div class="button button__yellow modal-button">
+				Отправить заявку
+			</div>
+			<div id="modal-form" class="modal">
+			  <div class="modal-content">
+			    <span class="close">&#10005;</span>
+			    <h2>Заказ звонка</h2>
+			    <p>Отправьте заявку и менеджеры свяжутся с вами <span>в течение 5 минут</span></p>
+			    <form action="">
+			    	<label for="">Ваше имя
+			    		<input type="text" placeholder="Вадим">
+			    	</label>
+			    	<label for="">Телефон
+			    		<input type="text" placeholder="+7 (___) ___ - __ - __" class="phone">
+			    	</label>
+			    	<div class="button button__yellow popup-button">отправить заявку</div>
+			    	<p>Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c <a href="">политикой конфиденциальности</a></p>
+			    </form>
+			  </div>
+			</div>
+			<div id="popup-modal" class="popup-modal">
+			  <div class="modal-content">
+			    <span class="close">&#10005;</span>
+			    <h2>Спасибо</h2>
+			    <p>Ваша заявка отправлена. 
+				Менеджеры свяжутся с вами <span>в течение 5 минут</span></p>
+			  </div>
+			</div>
+			<div class="buttons">
+				<span>Условия займа</span>
+				<span>График платежей</span>
+			</div>
+
+			<img src="img/main-banner.png" alt="" class="main-banner">
+		</div>
+	</section>
+
+	<section class="calculation main-content">
+		<div class="calc-wrapper">
+			<h2>Рассчитайте условия сами</h2>
+			<label for="">Сумма займа</label>
+			<input type="number" id='sum-input' value="1445000" step="1000">
+			<div class="range-wrapper">
+				<input type="range" id="range" min="50000" max="10000000" value="1445000" step="1000">
+				<div class="circle" id="circle"></div>
+			</div>
+			<div class="range">
+				<span>50 000</span>
+				<span>5 000 000</span>
+				<span>10 000 000</span>
+			</div>
+			<div class="wrapper">
+				<label for="">Срок займа</label>
+				<div class="tabs">
+					<div class="tab" data-id='1'>1 год</div>
+					<div class="tab active" data-id='2'>2 год</div>
+					<div class="tab" data-id='3'>3 год</div>
+					<div class="tab" data-id='4'>4 год</div>
+					<div class="tab" data-id='5'>5 год</div>
+				</div>
+			</div>
+		</div>
+		<div class="calc-wrapper">
+			<div class="info">
+				<h5>Ваша ставка:</h5>
+				<p class="stv">9.5%</p>
+			</div>
+			<div class="info">
+				<h5>Ежемесячный платеж:</h5>
+				<p id="res">24 328 ₽</p>
+			</div>
+			<div class="button button__yellow modal-button">получить одобрение</div>
+			<p class="hint">Расчет калькулятора произведен по ставкам, действующим при условии оформления финансовой защиты к кредиту. Не является публичной офертой.</p>
+	    </div>
+	</section>
+
+	<section class="terms main-content">
+		<h2>Общие условия</h2>
+		<div class="cards">
+			<div class="term-card">
+				<p>Сумма займа от 30 000 до  5 000 000 ₽</p>
+				<img src="img/card1.png" alt="">
+			</div>
+			<div class="term-card">
+				<p>Срок займа от 1 месяца  до 5 лет</p>
+				<img src="img/card2.png" alt="">
+			</div>
+			<div class="term-card">
+				<p>Ставка в день от 0,05</p>
+				<img src="img/card3.png" alt="">
+			</div>
+			<div class="term-card">
+				<p>Автомобиль остаётся у заёмщика</p>
+				<img src="img/card4.png" alt="">
+			</div>
+			<div class="term-card">
+				<p>Страховка не требуется</p>
+				<img src="img/card5.png" alt="">
+			</div>
+			<div class="term-card">
+				<p>Подтверждение дохода не требуется</p>
+				<img src="img/card6.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="requirements">
+		<div class="main-content">
+			<div class="">
+				<h2>О требованиях </br>для займа</h2>
+				<div class="tabs">
+					<div class="tab button button__white active" data-id='1'>
+						К заёмщику
+					</div>
+					<div class="tab button button__white" data-id='2'>
+						К авто
+					</div>
+					<div class="tab button button__white" data-id='3'>
+						К документам заемщика
+					</div>
+				</div>
+			</div>
+			<ul class='req-wrapper req-wrapper-active' id='req-1'>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					Транспорт категории A, B, C, D, E иностранных брендов не старше 25 лет, отечественных не старше 17 лет
+				</li>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					 Если ТС находится в обременении, сумма обременения должна составлять не более 35% рыночной стоимости ТС
+				</li>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					Авто в собственности или по ген. доверенности на заемщика или лица, готового выступить залогодателем
+				</li>
+			</ul>
+			<ul class='req-wrapper' id='req-2'>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					Транспорт категории A, B, C, D, E иностранных брендов не старше 25 лет, отечественных не старше 17 лет 12234
+				</li>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					 Если ТС находится в обременении, сумма обременения должна составлять не более 35% рыночной стоимости ТС
+				</li>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					Авто в собственности или по ген. доверенности на заемщика или лица, готового выступить залогодателем
+				</li>
+			</ul>
+			<ul class='req-wrapper' id='req-3'>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					Транспорт категории A, B, C, D, E иностранных брендов не старше 25 лет, отечественных не старше 17 лет 12342
+				</li>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					 Если ТС находится в обременении, сумма обременения должна составлять не более 35% рыночной стоимости ТС
+				</li>
+				<li><img src="img/li-marker.png" class="li-marker" alt="">
+					Авто в собственности или по ген. доверенности на заемщика или лица, готового выступить залогодателем
+				</li>
+			</ul>
+		</div>		
+	</section>
+
+	<section class="cars main-content">
+		<h2>Мы выдаём деньги  под залог любых транспортных средств</h2>
+		<div class="cars-carousel owl-carousel">
+			<div class="car-card">
+				<h3>Легковые автомобили</h3>
+				<p>Отечественные авто, иномарки</p>
+				<img src="img/car1.png" alt="" class="img">
+			</div>
+			<div class="car-card">
+				<h3>Грузовые автомобили</h3>
+				<p>Газели, тягачи, фуры</p>
+				<img src="img/car2.png" alt="">
+			</div>
+			<div class="car-card">
+				<h3>Спецтехника</h3>
+				<p>Погрузчики, экскаваторы</p>
+				<img src="img/car3.png" alt="">
+			</div>
+			<div class="car-card">
+				<h3>Мототехника</h3>
+				<p>Отечественных и зарубежных марок</p>
+				<img src="img/car4.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="steps main-content">
+		<h2>Простая и прозрачная схема работы</h2>
+		<p>Вся процедура занимает 30 минут.</p>
+		<div class="steps-cards">
+			<div class="step-card">
+				<img src="img/step1.png" alt="">
+				<p>Отправьте заяку. Перезвоним через 2 минуты.</p>
+			</div>
+			<div class="step-card">
+				<img src="img/step2.png" alt="">
+				<p>Приезжайте в наш офис на подписание договора заёма. Также есть услуга «Выездной менеджер»
+				</p>
+			</div>
+			<div class="step-card">
+				<img src="img/step3.png" alt="">
+				<p>Получите наличный или безналичный платеж на карту любого банка России
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="main-content">
+			<h2>О компании</h2>
+			<p>
+				«Автозалог Кредит» — федеральный сервис кредитования под залог автомобилей. Выдаём круглосуточно и без выходных. Одобряем клиентам  с просрочками и без подтверждения дохода. Работаем строго по ФЗ  «О потребительском кредите». Не оформляем договор купли-продажи.  Не являемся лизинговой компанией.</br></br>
+				Автоломбарды выдают деньги под залог машины, в обязательном порядке принимая авто на стоянку. «Автозалог Кредит» как и любой ломбард может выдать деньги под залог автомобиля.
+			</p>
+			<img src="img/about-banner.png" alt="">
+		</div>
+	</section>
+
+	<section class="advantages">
+		<h2 class="main-content">Преимущества займа у нас</h2>
+		<div class="advantages-list owl-carousel">
+			<div class="advantages-card">
+				<h3>Выдаём всем</h3>
+				<p>Если транспорт что-то стоит — мы выдадим деньги</p>
+				<img src="img/adv1.png" alt="">
+			</div>
+			<div class="advantages-card">
+				<h3>Выдаём всем</h3>
+				<p>Если транспорт что-то стоит — мы выдадим деньги</p>
+				<img src="img/adv2.png" alt="">
+			</div>
+			<div class="advantages-card">
+				<h3>Выдаём всем</h3>
+				<p>Если транспорт что-то стоит — мы выдадим деньги</p>
+				<img src="img/adv3.png" alt="">
+			</div>
+			<div class="advantages-card">
+				<h3>Выдаём всем</h3>
+				<p>Если транспорт что-то стоит — мы выдадим деньги</p>
+				<img src="img/adv4.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="examples main-content">
+		<h2>Примеры выданных займов</h2>
+		<div class="owl-carousel examples-carousel">
+			<div class="example-card">
+				<img src="img/example1.png" alt="">
+				<h3>Renault Logan</h3>
+				<ul>
+					<li>2013 года выпуска. Пробег 49 053 км.</li>
+					<li>Рыночная цена: <span>680 000 ₽</span> </li>
+					<li>Срок займа: <span>24 месяцев</span></li>
+					<li>Ставка: <span>2% в месяц</span></li>
+				</ul>
+				<p>Выданная сумма: <span>570 000 ₽</span></p>
+			</div>
+			<div class="example-card">
+				<img src="img/example2.png" alt="">
+				<h3>Renault Logan</h3>
+				<ul>
+					<li>2013 года выпуска. Пробег 49 053 км.</li>
+					<li>Рыночная цена: <span>680 000 ₽</span> </li>
+					<li>Срок займа: <span>24 месяцев</span></li>
+					<li>Ставка: <span>2% в месяц</span></li>
+				</ul>
+				<p>Выданная сумма: <span>570 000 ₽</span></p>
+			</div>
+			<div class="example-card">
+				<img src="img/example3.png" alt="">
+				<h3>Renault Logan</h3>
+				<ul>
+					<li>2013 года выпуска. Пробег 49 053 км.</li>
+					<li>Рыночная цена: <span>680 000 ₽</span> </li>
+					<li>Срок займа: <span>24 месяцев</span></li>
+					<li>Ставка: <span>2% в месяц</span></li>
+				</ul>
+				<p>Выданная сумма: <span>570 000 ₽</span></p>
+			</div>
+			<div class="example-card">
+				<img src="img/example2.png" alt="">
+				<h3>Renault Logan</h3>
+				<ul>
+					<li>2013 года выпуска. Пробег 49 053 км.</li>
+					<li>Рыночная цена: <span>680 000 ₽</span> </li>
+					<li>Срок займа: <span>24 месяцев</span></li>
+					<li>Ставка: <span>2% в месяц</span></li>
+				</ul>
+				<p>Выданная сумма: <span>570 000 ₽</span></p>
+			</div>
+			<div class="example-card">
+				<img src="img/example3.png" alt="">
+				<h3>Renault Logan</h3>
+				<ul>
+					<li>2013 года выпуска. Пробег 49 053 км.</li>
+					<li>Рыночная цена: <span>680 000 ₽</span> </li>
+					<li>Срок займа: <span>24 месяцев</span></li>
+					<li>Ставка: <span>2% в месяц</span></li>
+				</ul>
+				<p>Выданная сумма: <span>570 000 ₽</span></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="application">
+		<div class="main-content">
+			<div class="">
+				<h2>Заявка на займ  под ПТС в Москве</h2>
+				<p>Получите +40% к одобрению,  заполнив форму</p>
+			</div>
+			<form action="">
+				<label for="">Фамилия, имя и отчество
+					<input type="text" placeholder="Укажите как в паспорте">
+				</label>
+				<label for="">Сумма займа
+					<input type="text" placeholder="Какую сумму вы хотите">
+				</label>		
+				<label for="">Телефон
+					<input type="phone" placeholder="+7 (___) ___ - __ - __" class="phone">
+				</label>
+				<label for="">E-mail
+					<input type="text" placeholder="Вышлем информацию по заявке">
+				</label>
+				<p>Нажимая кнопку “Отправить заявку”,  </br>вы соглашаетесь с политикой конфиденциальности</p>
+				<div class="button button__yellow popup-button">отправить заявку</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="faq main-content">
+		<h2>Часто задаваемые вопросы</h2>
+		<p>Ответы на популярные вопросы</p>
+		<div class="dropdown">
+		    <div class="header">
+		    	<div class="icon"></div>
+		      	<p class="title">Выдаём всем</p>
+		    </div>
+		    <div class="menu">
+		      	Возможность оформления заявки и получения денежных средств предоставляется исключительно фактическому собственнику транспортного средства, чьи паспортные данные указаны в паспорте и свидетельстве о регистрации автомобиля.
+				Если гражданин не является собственником авто, но имеет генеральную доверенность, оформить займ, к сожалению, нельзя.
+		    </div>
+	  	</div>
+	  	<div class="dropdown">
+		    <div class="header">
+		    	<div class="icon"></div>
+		      	<p class="title">Всегда ли при залоге авто  остаётся у меня?</p>
+		    </div>
+		    <div class="menu">
+		      	Возможность оформления заявки и получения денежных средств предоставляется исключительно фактическому собственнику транспортного средства, чьи паспортные данные указаны в паспорте и свидетельстве о регистрации автомобиля.
+				Если гражданин не является собственником авто, но имеет генеральную доверенность, оформить займ, к сожалению, нельзя.
+		    </div>
+	  	</div>
+	  	<div class="dropdown">
+		    <div class="header">
+		    	<div class="icon"></div>
+		      	<p class="title">Какие документы нужны  для получения займа?</p>
+		    </div>
+		    <div class="menu">
+		      	Возможность оформления заявки и получения денежных средств предоставляется исключительно фактическому собственнику транспортного средства, чьи паспортные данные указаны в паспорте и свидетельстве о регистрации автомобиля.
+				Если гражданин не является собственником авто, но имеет генеральную доверенность, оформить займ, к сожалению, нельзя.
+		    </div>
+	  	</div>
+	  	<div class="dropdown">
+		    <div class="header">
+		    	<div class="icon"></div>
+		      	<p class="title">Одобрят ли мне займ, если  имеется генеральная  доверенность на авто?</p>
+		    </div>
+		    <div class="menu">
+		      	Возможность оформления заявки и получения денежных средств предоставляется исключительно фактическому собственнику транспортного средства, чьи паспортные данные указаны в паспорте и свидетельстве о регистрации автомобиля.
+				Если гражданин не является собственником авто, но имеет генеральную доверенность, оформить займ, к сожалению, нельзя.
+		    </div>
+	  	</div>
+	  	<div class="dropdown">
+		    <div class="header">
+		    	<div class="icon"></div>
+		      	<p class="title">Где и как я смогу забрать  деньги в Москве?</p>
+		    </div>
+		    <div class="menu">
+		      	Возможность оформления заявки и получения денежных средств предоставляется исключительно фактическому собственнику транспортного средства, чьи паспортные данные указаны в паспорте и свидетельстве о регистрации автомобиля.
+				Если гражданин не является собственником авто, но имеет генеральную доверенность, оформить займ, к сожалению, нельзя.
+		    </div>
+	  	</div>
+	</section>
+
+	<section class="video-reviews main-content">
+		<h2>Видеоотзывы клиентов</h2>
+		<div class="owl-carousel video-carousel">
+			<!-- <iframe width="370" height="226" src="https://www.youtube.com/embed/lTRiuFIWV54">
+			</iframe>
+			<iframe width="370" height="226" src="https://www.youtube.com/embed/wAPCSnAhhC8">
+			</iframe>
+			<iframe width="370" height="226" src="https://www.youtube.com/embed/BTYAsjAVa3I">
+			</iframe> -->
+			<!-- <iframe width="370" height="226" src="https://www.youtube.com/embed/TURbeWK2wwg">
+			</iframe> -->
+			<img src="img/video1.png" alt="">
+			<img src="img/video2.png" alt="">
+			<img src="img/video3.png" alt="">
+		</div>
+	</section>
+
+	<section class="map">
+		<div class="info">
+			<h2>Как нас найти</h2>
+			<h4>Главный офис:</h4>
+			<p>г. Москва, Россия, Ленинский проспект д 15, БЦ "Горький Парк Тауэр", 21 этаж, 119071</p>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143818.7594670052!2d37.460719209966776!3d55.720830480544784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b72c40f8ab5%3A0xd1550edd7a36b83f!2z0JHQuNC30L3QtdGBINGG0LXQvdGC0YAg0JPQvtGA0YzQutC40Lkg0J_QsNGA0Log0KLQsNGD0Y3RgA!5e0!3m2!1sru!2sru!4v1632477512592!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+
+	<section class="contacts main-content">
+		<h2>Наши контакты</h2>
+		<div class="">
+			<p class="title">Часы работы:</p>
+			<p>Каждый день с 8:00 до 20:00 </p>
+		</div>
+		<div class="">
+			<p class="title">Адрес:</p>
+			<p>Ленинградский проспект, 31Ас1</p>
+		</div>
+		<div class="">
+			<p class="title">Электронная почта:</p>
+			<p>info@autolombard-zalog-pts.ru</p>
+		</div>
+	</section>
+
+	<footer>
+		<div class="main-content">
+			<div class="logo">
+				<img src="img/logo1.svg" alt="">
+				<p class="copyright">avcredit.ru © 2021 год</p>
+			</div>
+			<nav>
+				<div class="dd-wrapper">
+					<a href="">ПТС</a>
+					<div class="dropdown-content">
+					    <a href="#">text 1</a>
+					    <a href="#">text 2</a>
+					    <a href="#">text 3</a>
+					</div>
+				</div>
+				<div class="dd-wrapper">
+					<a href="">Ломбарды</a>
+					<div class="dropdown-content">
+					    <a href="#">text 1</a>
+					    <a href="#">text 2</a>
+					    <a href="#">text 3</a>
+					</div>
+				</div>
+				<!-- <span><a href="">ПТС</a></span>
+				<span><a href="">Ломбарды</a></span> -->
+				<span><a href="">По форме</a></span>
+				<span><a href="">Калькулятор</a></span>
+				<span><a href="">Безопасность</a></span>
+				<span><a href="">О компании</a></span>
+				<span><a href="">Контакты</a></span>
+			</nav>
+			<div class="">
+				<p class="number">8 (800) 555-15-83</p>
+				<div class="button button__yellow modal-button">заказать звонок</div>
+			</div>
+			
+		</div>
+		
+		<p class="footnotes main-content">
+			При досрочном расторжении договора (досрочное погашение) клиент не платит какие-либо неустойки или взыскания. Может взиматься дополнительное начисление в случае просрочек по выплате долга (неисполнение кредитных обязательств). Если просрочка превышает календарный квартал (3 месяца) кредитор вправе обратиться в суд с целью взыскания задолженности. Однако, мы стараемся идти на встречу нашим клиентам и можем продлить срок ссуды (осуществить прологнацию кредита) на среднерыночных условиях. За ненадлежащее пользование предметом залога (например, умышленное повреждение или попытка спрятать имущество) может наступить уголовная ответственность. Рекомендуем нашим клиентам в случае проблем с выполнением обязательств обращаться к сотрудникам нашей компании. Мы поможем вам не получить пенни за просрочки и не потерять имущество. Максимальная сумма пенни не превышает 5 п. п. Не требуется сдавать комплект ключей.
+		</p>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js" integrity="sha512-yVcJYuVlmaPrv3FRfBYGbXaurHsB2cGmyHr4Rf1cxAS+IOe/tCqxWY/EoBKLoDknY4oI1BNJ1lSU2dxxGo9WDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	<script src='js/index.js'></script>
+</body>
+</html>
